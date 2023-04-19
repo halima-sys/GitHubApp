@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
                             return;
                         }
                         GitUsersResponse gitUsersResponse=response.body();
+                        data.clear();
                         for (GitUser user:gitUsersResponse.users) {
                             data.add(user);
                         }
